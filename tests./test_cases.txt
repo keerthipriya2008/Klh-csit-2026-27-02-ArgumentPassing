@@ -1,0 +1,45 @@
+ARGUMENT PASSING PROJECT - TEST CASES
+
+Test Case 1:
+Command:
+./argument_demo
+
+Expected:
+Number of Arguments: 0
+
+Test Case 2:
+Command:
+./argument_demo Hello
+
+Expected:
+Number of Arguments: 1
+Argument 1: Hello
+
+Test Case 3:
+Command:
+./argument_demo Jhansi 18 CSIT
+
+Expected:
+Number of Arguments: 3
+Argument 1: Jhansi
+Argument 2: 18
+Argument 3: CSIT
+
+Test Case 4:
+Command:
+./process_argument Jhansi CSIT Linux
+
+Expected:
+Parent process is created.
+Child process is created using fork().
+Child executes argument_demo using exec().
+Parent waits using wait().
+Arguments are displayed correctly.
+
+Test Case 5:
+Command:
+./process_argument Apple 25 Hyderabad
+
+Expected:
+The child process receives and displays all arguments correctly.
+Parent waits for child completion.
